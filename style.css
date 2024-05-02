@@ -1,0 +1,122 @@
+/* Basic page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Form stylization */
+form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, select {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    width: 100%;
+    transition: all 0.3s;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+input:focus, select:focus {
+    border-color: #6a5acd;
+    outline: none;
+    box-shadow: 0 0 10px rgba(106, 90, 205, 0.5);
+}
+
+button {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: #483d8b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Table styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+th {
+    background-color: #6a5acd;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.green {
+    background-color: #bfff00;
+    transition: background-color 0.5s ease;
+}
+.red {
+    background-color: #e36e3c;
+    transition: background-color 0.5s ease;
+}
+
+@keyframes colorFade {
+    0% { background-color: #ffc0cb; }
+    100% { background-color: #ccffcc; }
+}
+#total-sum {
+    width: 150px;
+    height: 20px;
+    animation: colorFade 10s infinite;
+}
+/* Stylization of information blocks */
+#total-sum, #detailed-info {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 55px;
+}
+
+#total-sum:hover, #detailed-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#detailed-info {
+    width: 300px;
+}
+#detailed-info {
+    min-height: 50px;
+}
